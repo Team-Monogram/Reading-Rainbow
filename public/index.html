@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  p.small {
+    line-height: 1.325;
+  }
+  p.big {
+    line-height: 1.875
+  }
+* {box-sizing: border-box;}
+
+body {
+  margin: 100;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: grey;
+  text-align: center;
+  padding: 20px 15px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: black;
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  border: none;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 10;
+    padding: 14px;
+  }
+  
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#contact">Contact</a>
+  <input type="text" placeholder="Search here for books ...">
+</div>
+
+<div style="padding-left:16px">
+  <h2>Reading Rainbow</h2>
+  <p class ="small">This project is a trial for the creation of a light novel compilation tool, through the use of web scraping.
+  There is such a wide range of websites to comb through for light novels, as such it may be difficult to find the exact book you want to read.
+  Through our website, we hope to make it easier to find the exact book that we want. We would also like to add functionality to discover books through search criteria such as genre, authors, or number of pages and chapters. </p>
+</div>
+
+</body>
+</html>
