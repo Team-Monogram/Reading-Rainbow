@@ -3,9 +3,14 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="./css/main.css" rel="stylesheet">
+<link rel="manifest" href="/public/manifest.json">
 </head>
 <body>
-
+<script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/public/serviceworker.js');
+    }
+  </script>
 <div class="topnav">
   <a class="active" href="./index.html">Home</a>
   <a href="./contact.html">Contact</a>
