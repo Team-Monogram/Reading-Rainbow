@@ -2,14 +2,14 @@
 // information with url parameters
 
 function get_chapter(url) {
-  console.log('Hello World');
   url = 'https://us-central1-reading-rainbow.cloudfunctions.net/stringer?url=' + url;
   fetch(url)
     .then((response) => {
       response.text();
     })
     .then((contents) => {
-      document.getElementById("content").innerhtml = contents;
+      console.log(url)
+      console.log(contents[0]);
     })
     .catch(() => {
       console.log('error has occurred');

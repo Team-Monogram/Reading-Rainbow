@@ -9,4 +9,4 @@ def stringer(request):
     html = response.content
     soup = BeautifulSoup(html)
     book = soup.find(attrs={'class': 'chapter-inner chapter-content'})
-    return str(book())
+    return book.text
