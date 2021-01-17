@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // Serving public folder files as resources
-app.use(express.static('../public'))
+app.use(express.static('public'))
 
 // Error handling
 app.use((req, res, next) => {
