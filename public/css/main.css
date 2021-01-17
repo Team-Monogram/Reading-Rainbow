@@ -20,6 +20,12 @@ body {
   margin: 10;
   font-family: Arial, Helvetica, sans-serif;
 }
+.w3-container {
+  margin: auto;
+  background: var(--grey);
+  border-radius: 10px;
+  height:auto;
+}
 .nav {
   overflow:hidden;
   background: #333;
