@@ -20,31 +20,36 @@ body {
   margin: 10;
   font-family: Arial, Helvetica, sans-serif;
 }
-.menu {
-  overflow: hidden;
+.nav {
+  overflow:hidden;
+  background: #333;
+  position: relative;
 }
-ul {
-  list-style-type: none;
+.nav #webLinks {
+  display:none;
 }
-li{
-  float:left;
-  padding: 10px;
-}
-li a{
-  display: block;
+
+.nav a {
+  color:white;
   padding: 14px 16px;
-  background-color: var(--grey);
-  text-align: center;
-  text-decoration: none;
-  float:left;
-  
+  text-decoration:none;
+  font-size:18px;
+  display: block;
 }
-li a:hover {
-  background-color: var(--blue);
+.nav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right:0;
+  top:0;
 }
-a.active {
-  background-color: #666666 ;
-  color: white;
+.nav a:hover{
+  background: var(--green);
+  color:black;
+}
+.active {
+  background-color: var(--red);
+  color:white;
 }
 }
 .logo {
