@@ -21,7 +21,7 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: white;
+  background-color: var(--blue);
 }
 
 .topnav a {
@@ -35,7 +35,7 @@ body {
 }
 
 .topnav a:hover {
-  background-color: #ddd;
+  background-color:var(--blue);
   color: black;
 }
 
@@ -53,6 +53,14 @@ body {
   font-size: 18px;
 }
 
+.topnav label[type=text] {
+  float: right;
+  padding: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  border: none;
+  font-size: 18px;
+}
 @media screen and (max-width: 600px) {
   .topnav a, .topnav input[type=text] {
     float: none;
