@@ -5,6 +5,7 @@
     <link href="./css/main.css" rel="stylesheet" />
     <link rel="manifest" href="/public/manifest.json" />
     <script src="./javascript/getchapter.js"></script>
+    <script> let url = 'https://www.royalroad.com/fiction/21220/mother-of-learning/chapter/455877/afterword' </script>
     <title>Reading Rainbow: a Light Novel compilation</title>
     <link type="image/x" rel="icon" href="./favicon.ico" />
   </head>
@@ -27,7 +28,7 @@
         </li>
       </ul>
     </nav>
-    <button onclick=“function(‘https://www.royalroad.com/fiction/21220/mother-of-learning/chapter/455877/afterword’)” type="submit"><img class="icon" src="./icons/BookCover.png" alt="BookCover"></button>
-    <div class="content"></div>
+    <button onclick='get_chapter(url)' type="submit"><img class="icon" src="./icons/BookCover.png" alt="BookCover"></button>
+    <div id="content"></div>
   </body>
 </html>
