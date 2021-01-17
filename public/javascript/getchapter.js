@@ -5,7 +5,7 @@ function get_chapter(url) {
   url =
     "https://us-central1-reading-rainbow.cloudfunctions.net/stringer?url=" +
     url;
-  fetch(url)
+  fetch(url, { mode: 'cors'})
     .then(response => response.text())
     .then(contents => {
       var element = document.getElementById("info");
