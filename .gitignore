@@ -1,5 +1,7 @@
 node_modules/
-.vs-code/
+.vscode/
 scripts/.DS_Store
 scripts/__pycache__/
 package-lock.json
+.vscode
+debug.log
