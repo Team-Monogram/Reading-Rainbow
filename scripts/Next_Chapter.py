@@ -1,8 +1,8 @@
-import requests
+import requests as req
 import re
 from bs4 import BeautifulSoup, SoupStrainer
 
-def next_chapter(url):
+def next_chapter(request):
     """returns the next chapter's url for the current chapter
 
     >>> next_chapter('https://www.royalroad.com/fiction/21220/mother-of-learning/chapter/455877/afterword')
@@ -17,7 +17,8 @@ def next_chapter(url):
     >>>
 
     """
-    page = requests.get(url)
+    url = request.args.get('url')
+    page = req.get(url)
     data = page.text
     soup = BeautifulSoup(data, 'html.parser')
     current = soup.find(attrs={'class': 'row nav-buttons'})
