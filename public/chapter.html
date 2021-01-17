@@ -26,11 +26,6 @@
   <body onload="load()">
     <link href="./css/chapter.css" rel="stylesheet" />
     <script>
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("./javascript/serviceworker.js");
-      }
-    </script>
-    <script>
       function myFunction() {
         var x = document.getElementById("webLinks");
         if (x.style.display === "block") {

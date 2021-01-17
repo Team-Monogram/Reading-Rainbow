@@ -6,8 +6,8 @@ function get_chapter(url) {
     "https://us-central1-reading-rainbow.cloudfunctions.net/stringer?url=" +
     url;
   fetch(url)
-    .then((response) => response.text())
-    .then((contents) => {
+    .then(response => response.text())
+    .then(contents => {
       var element = document.getElementById("info");
       element.innerHTML = contents;
     })

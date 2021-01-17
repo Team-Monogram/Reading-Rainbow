@@ -19,11 +19,18 @@
     />
   </head>
   <body>
+    <script src="./javascript/register-sw.js"></script>
     <script>
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("./javascript/serviceworker.js");
+      function myFunction() {
+        var x = document.getElementById("webLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
       }
     </script>
+
     <div class="w3-container">
       <div class="nav">
         <a href="#" class="active">Reading Rainbow</a>
@@ -35,16 +42,6 @@
           <i class="fa fa-bars"></i
         ></a>
       </div>
-      <script>
-        function myFunction() {
-          var x = document.getElementById("webLinks");
-          if (x.style.display === "block") {
-            x.style.display = "none";
-          } else {
-            x.style.display = "block";
-          }
-        }
-      </script>
       <!-- <button onclick="get_chapter(url)" type="submit"> -->
       <a href="./chapter.html">
         <img

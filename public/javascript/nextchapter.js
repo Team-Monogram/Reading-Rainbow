@@ -7,8 +7,8 @@ function next_chapter(url) {
     url;
   rooturl = "https://www.royalroad.com";
   fetch(url)
-    .then((response) => response.text())
-    .then((contents) => {
+    .then(response => response.text())
+    .then(contents => {
       var element = document.getElementById("next");
       var button = `<button style="display: flex;
       color: black;
