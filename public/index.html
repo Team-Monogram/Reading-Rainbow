@@ -5,23 +5,27 @@
 <link href="./css/main.css" rel="stylesheet">
 <link rel="manifest" href="/public/manifest.json">
 <title> Reading Rainbow: a Light Novel compilation </title>
+<link type="image/x" rel="icon" href="./favicon.ico"> 
 </head>
 <body>
-<script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/public/serviceworker.js');
-    }
-  </script>
-<div class="topnav">
-  <div class="header">
-    <img src="/icons/manifest-icon-512.png" alt="logo" />
-  </div>
-  <a class="active" href="./index.html">Home</a>
-  <a href="./contact.html">Contact</a>
-  <input id="search" type="text" placeholder="Search here for books ...">
-  <label for="search">Search tab for books</label>
-</div>
-
+  <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/public/serviceworker.js');
+      }
+    </script>
+  <nav>
+    <ul class="menu">
+      <li class="logo">
+        <img src="favicon.ico" href="icon">
+      </li>
+      <li class=item>
+        <a href="#" class="active">Home</a>
+      </li>
+      <li class=item>
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+  </nav>
 <div style="padding-left:16px">
   <h2>Reading Rainbow</h2>
   <p class ="small">This project is a trial for the creation of a light novel compilation tool, through the use of web scraping.
