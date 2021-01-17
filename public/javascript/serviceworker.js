@@ -3,6 +3,6 @@ importScripts(
 );
 
 workbox.routing.registerRoute(
-  ({ request }) => request.destination === "public",
+  ({ request }) => request.destination === "../../public",
   new workbox.strategies.NetworkFirst()
 );

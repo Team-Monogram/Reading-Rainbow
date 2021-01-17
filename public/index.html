@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="./css/main.css" rel="stylesheet" />
-    <link rel="manifest" href="/public/manifest.json" />
+    <link rel="manifest" href="manifest.json" />
     <script src="./javascript/getchapter.js"></script>
     <script>
       let url =
@@ -19,35 +19,39 @@
   <body>
     <script>
       if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("/public/serviceworker.js");
+        navigator.serviceWorker.register("./javascript/serviceworker.js");
       }
     </script>
     <div class="w3-container">
-    <div class="nav">
-      <a href="#" class="active">Reading Rainbow</a>
-      <div id="webLinks">
-        <a href="./index.html">Library</a>
-        <a href="./about.html">About</a>
+      <div class="nav">
+        <a href="#" class="active">Reading Rainbow</a>
+        <div id="webLinks">
+          <a href="./index.html">Library</a>
+          <a href="./about.html">About</a>
+        </div>
+        <a href="javasript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i
+        ></a>
       </div>
-      <a href="javasript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i
-      ></a>
-    </div>
-    <script>
-      function myFunction() {
-        var x = document.getElementById("webLinks");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
+      <script>
+        function myFunction() {
+          var x = document.getElementById("webLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
         }
-      }
-    </script>
-    <!-- <button onclick="get_chapter(url)" type="submit"> -->
-    <a href="./chapter.html">
-      <img class="icon" src="./icons/BookCover/manifest-icon-192.png" alt="BookCover" />
-    </a>
-    <div id="info"></div>
-  </div>
+      </script>
+      <!-- <button onclick="get_chapter(url)" type="submit"> -->
+      <a href="./chapter.html">
+        <img
+          class="icon"
+          src="./icons/BookCover/manifest-icon-192.png"
+          alt="BookCover"
+        />
+      </a>
+      <div id="info"></div>
+    </div>
   </body>
 </html>
