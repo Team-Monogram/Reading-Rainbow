@@ -6,7 +6,7 @@ function next_chapter(url) {
     "https://us-central1-reading-rainbow.cloudfunctions.net/next_chapter?url=" +
     url;
   rooturl = "https://www.royalroad.com";
-  fetch(url, { mode: 'cors'})
+  fetch(url, {mode: 'no-cors'})
     .then(response => response.text())
     .then(contents => {
       var element = document.getElementById("next");
