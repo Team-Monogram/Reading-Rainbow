@@ -2,6 +2,7 @@
 // information with url parameters
 
 function get_chapter (url) {
+  url = 'https://us-central1-reading-rainbow.cloudfunctions.net/stringer?url=' + url;
   fetch(url)
     .then((response) => {
       response.text();
