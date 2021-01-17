@@ -11,14 +11,16 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <script src="./javascript/getchapter.js"></script>
+    <script src="./javascript/previouschapter.js"></script>
+    <script src="javascript/nextchapter.js"></script>
     <script>
-      let url =
+      let globalurl =
         "https://www.royalroad.com/fiction/21220/mother-of-learning/chapter/455877/afterword";
     </script>
   </head>
 
   <body
-    onload="get_chapter('https:\/\/www.royalroad.com/fiction/21220/mother-of-learning/chapter/455877/afterword')"
+    onload="get_chapter(globalurl); next_chapter(globalurl); prev_chapter(globalurl);"
   >
     <script>
       function myFunction() {
@@ -41,9 +43,8 @@
         <i class="fa fa-bars"></i
       ></a>
     </div>
-<div id="previous">
-  
-</div>
+    <div id="previous"></div>
     <div id="info"></div>
+    <div id="next"></div>
   </body>
 </html>
