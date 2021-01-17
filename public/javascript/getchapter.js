@@ -4,14 +4,10 @@
 function get_chapter(url) {
   url = 'https://us-central1-reading-rainbow.cloudfunctions.net/stringer?url=' + url;
   fetch(url)
-    .then((response) => {
-      response.text();
+   .then(response => response.text())
+   .then(contents => {
+     var element = document.getElementById("info");
+     element.innerHTML = contents;
     })
-    .then((contents) => {
-      console.log(url)
-      console.log(contents[0]);
-    })
-    .catch(() => {
-      console.log('error has occurred');
-    })
+   .catch(() => console.log("Can’t access " + url + " response. Blocked by browser?"))
 }
