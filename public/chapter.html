@@ -16,12 +16,15 @@
     <script>
       let globalurl =
         "https://www.royalroad.com/fiction/21220/mother-of-learning/chapter/455877/afterword";
+      function load() {
+        prev_chapter(globalurl);
+        next_chapter(globalurl);
+        get_chapter(globalurl);
+      }
     </script>
   </head>
 
-  <body
-    onload="get_chapter(globalurl); next_chapter(globalurl); prev_chapter(globalurl);"
-  >
+  <body onload="load()">
     <script>
       function myFunction() {
         var x = document.getElementById("webLinks");
@@ -43,8 +46,8 @@
         <i class="fa fa-bars"></i
       ></a>
     </div>
-    <div id="previous"></div>
-    <div id="info"></div>
     <div id="next"></div>
+    <div id="info"></div>
+    <div id="previous"></div>
   </body>
 </html>

@@ -10,9 +10,7 @@ function next_chapter(url) {
     .then((response) => response.text())
     .then((contents) => {
       var element = document.getElementById("next");
-      var button = `<button onclick = "get_chapter(${
-        rooturl + contents
-      })"></button>`;
+      var button = `<button onclick = "get_chapter('${rooturl + contents}')">Previous</button>`;
       globalurl = rooturl + contents;
       element.innerHTML = button;
     })
