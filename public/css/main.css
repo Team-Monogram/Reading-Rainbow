@@ -21,7 +21,7 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: var(--blue);
+  background-color: white;
 }
 
 .topnav a {
@@ -35,7 +35,7 @@ body {
 }
 
 .topnav a:hover {
-  background-color:var(--blue);
+  background-color: #ddd;
   color: black;
 }
 
@@ -52,6 +52,13 @@ body {
   border: none;
   font-size: 18px;
 }
+.header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #555;
+}
+
 
 .topnav label[type=text] {
   float: right;
