@@ -5,11 +5,16 @@
     <link href="./css/main.css" rel="stylesheet" />
     <link rel="manifest" href="/public/manifest.json" />
     <script src="./javascript/getchapter.js"></script>
-    <script> let url = 'https://www.royalroad.com/fiction/21220/mother-of-learning/chapter/455877/afterword' </script>
+    <script>
+      let url =
+        "https://www.royalroad.com/fiction/21220/mother-of-learning/chapter/455877/afterword";
+    </script>
     <title>Reading Rainbow: a Light Novel compilation</title>
     <link type="image/x" rel="icon" href="./favicon.ico" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <script>
@@ -17,26 +22,29 @@
         navigator.serviceWorker.register("/public/serviceworker.js");
       }
     </script>
-<div class="nav">
-  <a href="#" class="active" >Reading Rainbow</a>
-  <div id="webLinks">
-    <a href="./index.html">Library</a>
-    <a href="./about.html">About</a>
+    <div class="nav">
+      <a href="#" class="active">Reading Rainbow</a>
+      <div id="webLinks">
+        <a href="./index.html">Library</a>
+        <a href="./about.html">About</a>
+      </div>
+      <a href="javasript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i
+      ></a>
     </div>
-    <a href="javasript:void(0);" class="icon" onclick="myFunction()">
-      <i class= "fa fa-bars"></i></a>
-  </div>
-  <script>
-    function myFunction(){
-      var x = document.getElementById("webLinks")
-      if (x.style.display === "block"){
-        x.style.display = "none";
-      } else {
-        x.style.display = "block"
+    <script>
+      function myFunction() {
+        var x = document.getElementById("webLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
       }
-    }
     </script>
-    <button onclick='get_chapter(url)' type="submit"><img class="icon" src="./icons/BookCover.png" alt="BookCover"></button>
+    <button onclick="get_chapter(url)" type="submit">
+      <img class="icon" src="./icons/BookCover.png" alt="BookCover" />
+    </button>
     <div id="info"></div>
   </body>
 </html>
