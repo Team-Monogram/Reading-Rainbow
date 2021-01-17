@@ -1,3 +1,5 @@
+
+
 :root {
     --red: #E0A6AA;
     --orange: #EDDD6E;
@@ -62,8 +64,8 @@ body {
     margin: 10;
     padding: 14px;
   }
-  
+
   .topnav input[type=text] {
-    border: 1px solid var(--grey);  
+    border: 1px solid var(--grey);
   }
 }
